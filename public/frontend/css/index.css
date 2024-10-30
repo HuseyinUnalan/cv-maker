@@ -1,0 +1,270 @@
+body {
+  font-family: Arial, sans-serif;
+  font-family: 'DejaVu Sans', Arial, sans-serif; 
+  margin: 0;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.header {
+  background-color: #f4f4f4;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+.content {
+  padding: 10px;
+}
+
+.profile-img {
+  max-width: 195px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+}
+
+.hobby-tag {
+  background-color: #55BE96;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin: 3px;
+  font-size: 0.9rem;
+  border-radius: 15px 50px;
+}
+
+.language-tag {
+  background-color: #34465D;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin: 3px;
+  font-size: 0.9rem;
+  border-radius: 15px 50px;
+
+}
+
+.skills-tag {
+  background-color: #0077B5;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin: 3px;
+  font-size: 0.9rem;
+  border-radius: 15px 50px;
+
+}
+
+.name-container {
+  display: flex;
+  /* Flexbox kullanarak öğeleri yan yana hizala */
+  align-items: flex-start;
+  /* Üst kısımda hizala */
+}
+
+.profile-img {
+  margin-right: 20px;
+  /* Fotoğraf ile isim arasında boşluk bırak */
+}
+
+.info {
+  margin-top: 10px;
+  /* Bilgilerin üst kısmındaki boşluğu ayarla */
+}
+
+.name {
+  margin: 0;
+  /* İsim için varsayılan margin'i kaldır */
+}
+
+.contact-info {
+  margin: 0;
+  /* İletişim bilgileri için varsayılan margin'i kaldır */
+}
+
+.sticky-button-container {
+  position: -webkit-sticky;
+  /* Safari için */
+  position: sticky;
+  bottom: 20px;
+  /* Alt kısma olan mesafe */
+  left: 0;
+  /* Sol tarafa hizalama */
+  right: 0;
+  /* Sağ tarafa hizalama */
+  z-index: 1000;
+  /* Diğer içeriklerin üstünde görünmesi için */
+  text-align: left;
+  /* Butonu ortalamak için */
+  padding: 10px;
+  /* İçerik alanı için boşluk */
+}
+
+.education-list, .experience-list, .certification-list {
+  list-style-type: none;
+  /* Madde işaretlerini kaldır */
+  padding-left: 0;
+  /* Soldan boşluk kaldır */
+}
+
+.education-group, .experience-group, .certification-group {
+  background-color: #f9f9f9;
+  /* Arka plan rengi */
+  border-radius: 5px;
+  /* Köşeleri yuvarlaştır */
+  padding: 15px;
+  /* İçerik alanı için boşluk */
+  margin-bottom: 10px;
+  /* Gruplar arası mesafe */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Gölgelendirme efekti */
+}
+
+.input-group {
+  display: flex;
+  /* Flexbox kullanarak yan yana hizala */
+  align-items: center;
+  /* Dikey olarak ortala */
+}
+
+.input-group-text {
+  background-color: #e9ecef;
+  /* Giriş alanı arka plan rengi */
+  border: 1px solid #ced4da;
+  /* Kenar rengi */
+}
+
+input.form-control {
+  border-radius: 0;
+  /* Kenar yuvarlama kaldır */
+  box-shadow: none;
+  /* Gölgelendirme kaldır */
+  border: 1px solid #ced4da;
+  /* Kenar rengi */
+}
+
+input.form-control:focus {
+  border-color: #80bdff;
+  /* Fokus kenar rengi */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  /* Fokus gölgesi */
+}
+
+
+.education-item {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-left: 4px solid #007bff;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.experience-item {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-left: 4px solid #3cff00;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.certification-item {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-left: 4px solid #ff003c;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+#previewEducation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Eğitimler başlığı stili */
+.education-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+}
+
+.education-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#previewExperience {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Deneyim başlığı stili */
+.experience-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #3cff00;
+  padding-bottom: 5px;
+}
+
+.experience-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+#previewCertification {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Sertifika başlığı stili */
+.certification-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ff003c;
+  padding-bottom: 5px;
+}
+
+.certification-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.school-name {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.department {
+  font-size: 1em;
+  color: #666;
+  margin: 4px 0;
+}
+
+.graduation-year {
+  font-size: 0.9em;
+  color: #999;
+}
